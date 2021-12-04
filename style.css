@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section .main {
+  width: 580px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .main .searchBx {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+section .main .searchBx .query {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.4);
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+  color: #999;
+  text-indent: 50px;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+section .main .searchBx .query:hover {
+  box-shadow: 0 5px 50px rgba(255, 255, 73, 0.2);
+}
+
+section .main .searchBx .icons {
+  position: absolute;
+  top: 10%;
+  bottom: 0.01px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  align-items: center;
+  pointer-events: none;
+}
+
+.searchBtn {
+  margin: 0 5px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.searchBtn:hover {
+  border: 1px solid #ccc;
+  color: rgb(65, 65, 65);
+}
+
+.image {
+  position: absolute;
+  padding: 10px;
+  margin-top: 27%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.image:hover {
+  animation: shake 1s ease-in-out infinite;
+}
+
+.image2 {
+  position: absolute;
+  padding: 10px;
+  margin-top: -37%;
+  margin-left: -90%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+}
+
+.image2:hover {
+  animation: floating 2s ease-in-out infinite;
+}
+
+.image3 {
+  position: absolute;
+  padding: 10px;
+  margin-top: 37%;
+  margin-right: 90%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+}
+
+.image3:hover {
+  animation: shake 1s ease-in-out infinite;
+}
+
+.flexBox {
+  position: absolute;
+  padding: 10px;
+  margin-top: 40%;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+  z-index: 1;
+  border: 1px solid transparent;
+}
+
+.flexBox:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 50px rgba(255, 255, 73, 0.5);
+}
+
+.flexBox2 {
+  position: absolute;
+  padding: 10px;
+  margin-top: 40%;
+  margin-left: 20%;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+  z-index: 1;
+  border: 1px solid transparent;
+}
+
+.flexBox2:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 50px rgba(69, 255, 100, 0.5);
+}
+
+.flexBox3 {
+  position: absolute;
+  padding: 10px;
+  margin-top: 40%;
+  margin-right: 20%;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+  z-index: 1;
+  border: 1px solid transparent;
+}
+
+.flexBox3:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 50px rgba(69, 255, 100, 0.5);
+}
+
+.flexBox4 {
+  position: absolute;
+  padding: 10px;
+  margin-top: -40%;
+  margin-right: 93%;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
+  z-index: 1;
+  border: 2px solid transparent;
+}
+
+.flexBox4:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 50px rgba(255, 255, 73, 0.5);
+}
+/*
+.flexBox5 {
+  position: absolute;
+  width: 250px;
+  height: 83%;
+  padding: 10px;
+  margin-right: 78.4%;
+  margin-bottom: 5.81%;
+  border-radius: 2%;
+  z-index: 1;
+  border: 1px solid #ccc;
+  animation: 2s rollIn ease-in-out;
+  background-color: whitesmoke;
+  z-index: 2;
+  text-align-last: center;
+}
+
+.flexBox5:hover {
+  border: 1px solid #ccc;
+  
+}*/
+.circle {
+  height: 5000px;
+  width: 5000px;
+  position: absolute;
+  padding: 10px;
+  margin-top: 424.25%;
+  border: 2px solid rgba(146, 208, 254, 0.5);
+  overflow: hidden;
+  border-radius: 0%;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  10% {
+    transform: scale(1.2, 0.6);
+  }
+  30% {
+    transform: scale(0.8, 1.1) translateY(-14px);
+  }
+  50% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.bounce {
+  animation: spring 100s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
