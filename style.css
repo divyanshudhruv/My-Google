@@ -11,6 +11,7 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 9999;
 }
 
 section .main {
@@ -20,6 +21,7 @@ section .main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 9999;
 }
 
 section .main .searchBx {
@@ -86,6 +88,7 @@ section .main .searchBx .icons {
   border-radius: 50%;
   box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
   animation: bounce 1s ease-in-out infinite;
+  z-index: 9999;
 }
 
 .image:hover {
@@ -182,33 +185,33 @@ section .main .searchBx .icons {
   box-shadow: 0 5px 50px rgba(146, 208, 254, 0.5);
   z-index: 1;
   border: 2px solid transparent;
+  display: flex;
 }
 
 .flexBox4:hover {
   border: 1px solid #ccc;
   box-shadow: 0 5px 50px rgba(255, 255, 73, 0.5);
 }
-/*
-.flexBox5 {
+
+.sidebar {
+  visibility: hidden;
   position: absolute;
   width: 250px;
   height: 83%;
   padding: 10px;
   margin-right: 78.4%;
-  margin-bottom: 5.81%;
+  margin-bottom: 6.7%;
   border-radius: 2%;
-  z-index: 1;
   border: 1px solid #ccc;
-  animation: 2s rollIn ease-in-out;
   background-color: whitesmoke;
   z-index: 2;
   text-align-last: center;
 }
 
-.flexBox5:hover {
+.sidebar:hover {
   border: 1px solid #ccc;
-  
-}*/
+}
+
 .circle {
   height: 5000px;
   width: 5000px;
@@ -218,6 +221,81 @@ section .main .searchBx .icons {
   border: 2px solid rgba(146, 208, 254, 0.5);
   overflow: hidden;
   border-radius: 0%;
+}
+
+#confettis {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.confetti {
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  transform-origin: left top;
+  animation: confetti 5s ease-in-out -2s infinite;
+}
+.confetti:nth-child(1) {
+  left: 10%;
+  animation-delay: 0;
+  background-color: #fc0120;
+}
+
+.confetti:nth-child(2) {
+  left: 20%;
+  animation-delay: -5s;
+  background-color: #8257e6;
+}
+
+.confetti:nth-child(3) {
+  left: 30%;
+  animation-delay: -3s;
+  background-color: #ffbf4d;
+}
+
+.confetti:nth-child(4) {
+  left: 40%;
+  animation-delay: -2.5s;
+  background-color: #fe5d7a;
+}
+
+.confetti:nth-child(5) {
+  left: 50%;
+  animation-delay: -4s;
+  background-color: #45ec9c;
+}
+
+.confetti:nth-child(6) {
+  left: 60%;
+  animation-delay: -6s;
+  background-color: #f6e327;
+}
+
+.confetti:nth-child(7) {
+  left: 70%;
+  animation-delay: -1.5s;
+  background-color: #f769ce;
+}
+
+.confetti:nth-child(8) {
+  left: 80%;
+  animation-delay: -2s;
+  background-color: #007de7;
+}
+
+.confetti:nth-child(9) {
+  left: 90%;
+  animation-delay: -3.5s;
+  background-color: #63b4fc;
+}
+
+.confetti:nth-child(10) {
+  left: 100%;
+  animation-delay: -2.5s;
+  background-color: #f9c4ea;
 }
 
 @keyframes shake {
@@ -297,8 +375,38 @@ section .main .searchBx .icons {
   }
 }
 
+@keyframes rollOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+}
+
 .bounce {
   animation: spring 100s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+
+@keyframes confetti {
+  0% {
+    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+  }
+  50% {
+    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+  }
+  75% {
+    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+  }
+  100% {
+    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+  }
 }
