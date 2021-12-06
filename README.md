@@ -13,7 +13,8 @@
 ---------------------
 🏷️ **Version**
 * > v 0.1 - Published
-* > v 0.2 - Soon
+* > v 0.2 - Published
+* > v 0.3 - Soon
 ---------------------
 # 🖼️ **Some Pics Of The Website**
 
