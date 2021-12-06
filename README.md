@@ -2,7 +2,7 @@
 
 📑 **Description**
 * A Modern Google Made With `HTML` , `CSS` And `JavaScript`
-* U Can See The **Website** (`v 0.1`) At - https://divyanshudhruv.github.io/My-Google/
+* U Can See The **Website** (`v 0.2`) At - https://divyanshudhruv.github.io/My-Google/
 ----------------------
 🤝 **Collaboration**
 * Need Someone To **Collaborate** With Me
